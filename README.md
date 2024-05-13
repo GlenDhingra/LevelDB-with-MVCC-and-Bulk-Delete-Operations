@@ -28,7 +28,7 @@ MVCC in LevelDB involves appending a version number or timestamp to each data it
 ## Performance Evaluation
 A comprehensive series of tests were conducted to assess the performance impact of MVCC and the newly introduced features in LevelDB. The tests involved mixed read/write queries under varying concurrency levels, from single-threaded up to multi-threaded with five threads.
 
-![Implementation Image 1](Images/MVCC-Flowchart.jpg)
+![Implementation Image 1](Images/MVCC-Flowchart.JPG)
 ![Implementation Image 2](Images/MVCC-Threads.jpg)
 ![Implementation Image 3](Images/DeleteAll-Chart.jpg)
 
