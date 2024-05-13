@@ -20,6 +20,7 @@ Multi-Version Concurrency Control (MVCC) is a database management technique that
 ## Implementation Details
 ### Multi-Version Concurrency Control (MVCC)
 MVCC in LevelDB involves appending a version number or timestamp to each data item. This modification allows each transaction to access a snapshot of the database at a specific point in time, isolating it from changes made by other transactions. This functionality is crucial for enhancing data consistency and reducing lock contention.
+![Image 1](Images/MVCC-Flowchart.JPG)
 
 ### Additional Functionalities
 - **DeleteAll and BulkDeleteForRange**: These functions allow for efficient data management, especially in scenarios requiring frequent refreshes or deletions of large data segments.
@@ -28,9 +29,9 @@ MVCC in LevelDB involves appending a version number or timestamp to each data it
 ## Performance Evaluation
 A comprehensive series of tests were conducted to assess the performance impact of MVCC and the newly introduced features in LevelDB. The tests involved mixed read/write queries under varying concurrency levels, from single-threaded up to multi-threaded with five threads.
 
-![Implementation Image 1](Images/MVCC-Flowchart.JPG)
-![Implementation Image 2](Images/MVCC-Threads.jpg)
-![Implementation Image 3](Images/DeleteAll-Chart.jpg)
+
+![Implementation Image 1](Images/MVCC-Threads.JPG)
+![Implementation Image 2](Images/DeleteAll-Chart.JPG)
 
 ## Conclusion
 The implementation of MVCC and additional functionalities such as DeleteAll, GetLessThan, and GetGreaterThan within LevelDB has significantly enhanced its performance and capability to handle concurrent operations. These enhancements make LevelDB a more versatile and efficient key-value storage solution for modern applications requiring robust data consistency and efficient handling of concurrent operations.
