@@ -36,9 +36,6 @@ A comprehensive series of tests were conducted to assess the performance impact 
 ## Conclusion
 The implementation of MVCC and additional functionalities such as DeleteAll, GetLessThan, and GetGreaterThan within LevelDB has significantly enhanced its performance and capability to handle concurrent operations. These enhancements make LevelDB a more versatile and efficient key-value storage solution for modern applications requiring robust data consistency and efficient handling of concurrent operations.
 
-## Future Work
-Further development will focus on overcoming inter-process limitations and incorporating conflict resolution for write operations, thereby extending LevelDB's applicability to more complex transactional environments.
-
 ## Collaboration
 This project does not provide the source code publicly. However, if you are interested in collaborating or require access to the codebase, please feel free to reach out via email.
 
